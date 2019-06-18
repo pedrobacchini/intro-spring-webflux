@@ -14,17 +14,11 @@ public class PlayListServiceImpl implements PlayListService {
     public PlayListServiceImpl(PlayListRepository playListRepository) { this.playListRepository = playListRepository; }
 
     @Override
-    public Flux<Playlist> findAll() {
-        return playListRepository.findAll();
-    }
+    public Flux<Playlist> findAll() { return playListRepository.findAll(); }
 
     @Override
-    public Mono<Playlist> findById(String id) {
-        return playListRepository.findById(id);
-    }
+    public Mono<Playlist> findById(String id) { return playListRepository.findById(id); }
 
     @Override
-    public Mono<Playlist> save(Playlist playlist) {
-        return playListRepository.save(playlist);
-    }
+    public Mono<Playlist> save(Playlist playlist) { return playListRepository.save(playlist); }
 }
